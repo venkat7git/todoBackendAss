@@ -1,0 +1,69 @@
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "name":"madhu",
+    "email":"madhu@gmail.com",
+    "password":"madhu12"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"madhu@gmail.com",
+    "password":"madhu12"
+}
+
+###
+POST http://localhost:3000/tasks
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyN2U4NzZjOC02YTE3LTQxMGItYmU1Mi01Y2ZmNDNkMGQ5OWYiLCJpYXQiOjE3MjcyMjY3MDAsImV4cCI6MTcyNzIzMDMwMH0.f_2u-3u0v-Sqishxp46P6xrN4eerSVDUW3IiW4hQfgY
+Content-Type: application/json
+
+{
+    "title":"Develop static page",
+    "description":"Do within a day",
+    "status":"pending"
+}
+
+###
+GET http://localhost:3000/tasks
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyN2U4NzZjOC02YTE3LTQxMGItYmU1Mi01Y2ZmNDNkMGQ5OWYiLCJpYXQiOjE3MjcyMjY3MDAsImV4cCI6MTcyNzIzMDMwMH0.f_2u-3u0v-Sqishxp46P6xrN4eerSVDUW3IiW4hQfgY
+
+###
+PUT http://localhost:3000/tasks/884fac9b-5450-425d-9e50-22b914a746c9
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyN2U4NzZjOC02YTE3LTQxMGItYmU1Mi01Y2ZmNDNkMGQ5OWYiLCJpYXQiOjE3MjcyMjY3MDAsImV4cCI6MTcyNzIzMDMwMH0.f_2u-3u0v-Sqishxp46P6xrN4eerSVDUW3IiW4hQfgY
+Content-Type: application/json
+
+{
+    "title": "Build a static page",
+    "description": "Take two days",
+    "status": "pending" 
+}
+
+###
+DELETE http://localhost:3000/tasks/f094b771-bd65-4865-a3ca-92505b19ba96
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyN2U4NzZjOC02YTE3LTQxMGItYmU1Mi01Y2ZmNDNkMGQ5OWYiLCJpYXQiOjE3MjcyMjY3MDAsImV4cCI6MTcyNzIzMDMwMH0.f_2u-3u0v-Sqishxp46P6xrN4eerSVDUW3IiW4hQfgY
+
+###
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "name":"mani",
+    "email":"mani@gmail.com",
+    "password":"mani12"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"mani@gmail.com",
+    "password":"mani12"
+}
+
+###
+GET http://localhost:3000/
